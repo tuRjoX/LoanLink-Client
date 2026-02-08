@@ -4,7 +4,7 @@ Frontend application for **LoanLink** - A comprehensive Microloan Request & Appr
 
 ## 🚀 Live Demo
 
-**Live Site URL:** `your-live-url-here`
+**Live Site URL:** `https://loanlink-3d15f.web.app/`
 
 ## 📋 Purpose
 
@@ -180,7 +180,7 @@ LoanLink-Client/
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/tuRjoX/LoanLink-Client.git
    cd LoanLink-Client
    ```
 
@@ -398,96 +398,3 @@ LoanLink-Client/
 - Check webhook configuration
 - Test with Stripe test cards
 
-## 🔄 Git Workflow
-
-### Commit Messages (Important for Grading)
-
-Follow meaningful commit message conventions:
-
-```bash
-git commit -m "feat: add loan application form"
-git commit -m "fix: resolve payment processing bug"
-git commit -m "style: improve dashboard responsiveness"
-git commit -m "refactor: optimize API calls"
-git commit -m "docs: update README with deployment guide"
-```
-
-### Required Commits
-
-- **Minimum 20 meaningful commits** for client side
-- Each commit should represent a logical unit of work
-- Use descriptive messages explaining what and why
-
-## 📱 Responsive Breakpoints
-
-- **Mobile:** < 640px
-- **Tablet:** 640px - 1024px
-- **Desktop:** > 1024px
-
-## 🎨 Color Scheme
-
-### Light Mode
-
-- Primary: `#0ea5e9` (Sky Blue)
-- Background: `#ffffff` (White)
-- Text: `#1f2937` (Gray 800)
-
-### Dark Mode
-
-- Primary: `#38bdf8` (Light Blue)
-- Background: `#111827` (Gray 900)
-- Text: `#f9fafb` (Gray 50)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the ISC License.
-
-## 👥 Support
-
-For issues or questions:
-
-- Open an issue on GitHub
-- Contact: support@loanlink.com
-
-## 🎓 Assignment Submission
-
-### Checklist
-
-- [ ] 20+ meaningful commits on client side
-- [ ] README with project details and npm packages
-- [ ] Firebase config secured with environment variables
-- [ ] Responsive design (mobile, tablet, desktop)
-- [ ] Theme toggle functionality
-- [ ] All required pages implemented
-- [ ] Role-based dashboard working
-- [ ] Payment integration functional
-- [ ] No errors on page reload
-- [ ] Proper 404 page
-- [ ] Dynamic page titles
-- [ ] Live deployment successful
-
-### Submission Details
-
-```
-Admin Email: admin@loanlink.com
-Admin Password: Admin@123
-
-Manager Email: manager@loanlink.com
-Manager Password: Manager@123
-
-Live Site Link: your-live-url
-GitHub Repository (client): your-client-repo-url
-GitHub Repository (server): your-server-repo-url
-```
-
----
-
-**Made with ❤️ for Programming Hero - Milestone 11**

@@ -248,7 +248,7 @@ const Register = () => {
                   <option value="">Select a role</option>
                   <option value="borrower">Borrower</option>
                   <option value="manager">Manager</option>
-                  {/*<option value="admin">Admin</option>*/}
+                  {/* <option value="admin">Admin</option> */}
                 </select>
                 {errors.role && (
                   <p className="mt-1 text-sm text-red-600">
