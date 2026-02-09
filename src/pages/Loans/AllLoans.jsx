@@ -165,8 +165,7 @@ const AllLoans = () => {
                     <div className="relative h-48 overflow-hidden">
                       <img
                         src={
-                          loan.images?.[0] ||
-                          "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400"
+                          loan.images
                         }
                         alt={loan.title}
                         className="w-full h-full object-cover"
