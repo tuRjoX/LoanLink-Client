@@ -191,7 +191,7 @@ const Home = () => {
                 >
                   <img
                     src={
-                      loan.images
+                      loan.image || "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800"
                     }
                     alt={loan.title}
                     className="w-full h-48 object-cover"
