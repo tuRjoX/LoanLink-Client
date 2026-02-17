@@ -353,13 +353,14 @@ const LoanApplication = () => {
                           type="number"
                           {...register("loanAmount", {
                             required: "Loan amount is required",
-                            min: {
-                              value: 100,
-                              message: "Minimum loan amount is $100",
-                            },
-                            max: {
-                              value: loan.maxLimit,
-                              message: `Maximum loan amount is $${loan.maxLimit}`,
+                            validate: (value) => {
+                              const val = Number(value);
+                              if (!value || isNaN(val)) return "Loan amount is required";
+                              const min = loan && loan.maxLimit < 100 ? 1 : 100;
+                              if (val < min) return `Minimum loan amount is $${min}`;
+                              if (loan && val > loan.maxLimit)
+                                return `Maximum loan amount is $${loan.maxLimit}`;
+                              return true;
                             },
                           })}
                           className="input-field"

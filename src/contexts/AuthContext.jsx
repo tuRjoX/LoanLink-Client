@@ -89,7 +89,12 @@ export const AuthProvider = ({ children }) => {
         `${import.meta.env.VITE_API_URL}/api/users/${email}`,
         { headers: { Authorization: `Bearer ${token}` } },
       );
-      setUserRole(response.data?.role || "borrower");
+      const role = response.data?.role;
+      setUserRole(
+        typeof role === "string" && role.trim() !== ""
+          ? role.trim().toLowerCase()
+          : "borrower",
+      );
       return response.data;
     } catch (error) {
       console.error("Error fetching user role:", error);

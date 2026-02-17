@@ -47,10 +47,6 @@ const LoanDetails = () => {
       navigate("/login", { state: { from: `/loan/${id}` } });
       return;
     }
-    if (userRole !== "borrower") {
-      toast.error("Only borrowers can apply for loans");
-      return;
-    }
     navigate(`/loan-application/${id}`);
   };
 
@@ -294,28 +290,19 @@ const LoanDetails = () => {
                   </div>
                 </div>
 
-                {loan.status === "active" && userRole === "borrower" ? (
+                {loan.status === "active" ? (
                   <button
                     onClick={handleApply}
                     className="w-full btn-primary py-3 text-lg"
                   >
                     Apply Now
                   </button>
-                ) : loan.status !== "active" ? (
-                  <button
-                    disabled
-                    className="w-full btn-primary py-3 text-lg opacity-50 cursor-not-allowed"
-                  >
-                    Currently Unavailable
-                  </button>
                 ) : (
                   <button
                     disabled
                     className="w-full btn-primary py-3 text-lg opacity-50 cursor-not-allowed"
                   >
-                    {userRole === "admin" || userRole === "manager"
-                      ? "Managers/Admins Cannot Apply"
-                      : "Login as Borrower to Apply"}
+                    Currently Unavailable
                   </button>
                 )}
 
